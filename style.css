@@ -29,7 +29,202 @@ html { box-sizing: border-box; }
 */
 
 
+/* DOTAZY
+
+1. max-width - puvodne na cele body, ale pak jsem nevedela co stim. takze jsem to dala zpatky a max-width nastavila na kazde sekci zvlast
+
+2.popis stylu, text specialne pro jednu sekci, text-nazev-sekce, text-velikost-style
+
+
+*/
+
 body {
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #242424;
+	font-family: 'Lora', serif;
+}
+
+
+.width-section{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size:36px;
+	color: #3e606b;
+	font-family: 'Playfair Display', serif;
+}
+
+h3{
+	font-size:18px;
+	color: #3e606b;
+	font-family: 'Playfair Display', serif;
+}
+
+
+/* header: logo & menu */
+.header{
+	padding-top:30px;
+	padding-bottom: 30px;
+	display:flex;
+	justify-content:space-between;
+}
+
+.logo{
+	max-width: 170px;
+}
+
+.menu{
+	margin:0;
+	padding:0;
+	list-style: none;
+	display:flex;
+
+}
+
+.menu-item, .menu-item a{
+	padding:10px 15px;
+	
+}
+
+.menu-item a{
+	text-decoration: none;
+	color:#242424;
+}
+
+.menu-item a:hover{
+	background-color:#f195b2;
+	color:white;
+	border-radius: 20px;
+}
+
+
+
+/* ---------- hero section -------------------- */
+.hero{
+	color:white;
+	background:url("images/cupcake.jpg");
+	background-size: cover;
+}
+
+.hero h1{
+	font-size: 52px;
+	margin:0
+}
+
+.hero p{
+	font-size: 24px;
+	font-style: italic;
+	margin-bottom: 0;
+}
+
+.text-right{
+	padding:80px 40% 80px 0;
+}
+
+
+/* ----------------- welcome ---------------------- */
+.welcome{
+	padding: 80px 0;
+	display:flex;
+	justify-content:space-between;
+}
+
+.welcome-text,
+.welcome-img{
+	flex: 0 0 calc((100% - 30px)/2);
+}
+
+
+.welcome-text a{
+	color:white;
+	background-color: #f195b2;
+	border-radius: 30px;
+	padding: 15px 40px;
+	text-decoration: none;
+	
+}
+
+.welcome-text a:hover{
+	color:white;
+	background-color: #d2567d;
+	border-radius: 30px;
+	padding: 15px 40px;
+	text-decoration: none;
+}
+
+.welcome-img img{
+	border-radius: 5px;
+	max-width: 100%;
+}
+
+.button{
+	margin-top:30px;
+}
+
+
+
+/* -------------- daily-menu section --------------*/
+.daily-menu{
+	background-color:#f0f0f0;
+	padding: 80px 0;
+}
+
+.products{
+	display:flex;
+	justify-content:space-between;
+}
+
+.product{
+	flex: 0 0 calc((100% - 90px)/4);
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 0px 2px 8px rgb(0,0,0,0.2);
+}
+
+.product img{
+	max-width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.product h3{
+	padding: 20px;
+	margin:0;
+}
+
+.product p{
+	padding: 0 20px 20px 20px;
 	margin: 0;
 }
 
+
+/* ------------ backing-style section --------------*/
+.backing-style{
+	padding: 80px 0;
+	display:flex;
+	justify-content:space-between;
+}
+
+.backing-style-img,
+.backing-style-text{
+	flex: 0 1 calc((100% - 30px)/2);
+}
+
+.backing-style-img img{
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+
+
+/* ------------ footer --------------*/
+.footer{
+	background-color: #303339;
+	padding: 30px 0px;
+	text-align: center;
+	color:white;
+}
